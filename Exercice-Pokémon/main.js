@@ -17,7 +17,7 @@ class pokemon{
 }
 
 function isLucky(ex,nb = 0){
-        nb = Math.random()
+        nb = Math.floor(Math.random()*101)
         if ( ex.luck >= nb){
             return true
         }
@@ -31,7 +31,7 @@ function combat( a , b ){
     while(a.hp > 0 || b.hp > 0){  
         if (isLucky(a) == true){
             a.attack(b)
-            
+            console.log(b.name + " attaque " + a.name + "!")
             if (a.hp <= 0) {
                 a.hp = 0
                 console.log( b.name + " a gagné!")
@@ -41,7 +41,7 @@ function combat( a , b ){
     }
         if (isLucky(a) == true){
             b.attack(a)
-            console.log(a.name + " attaque !")
+            console.log(a.name + " attaque " + b.name + "!")
             
             if (b.hp <= 0) {
                 b.hp = 0
@@ -53,6 +53,6 @@ function combat( a , b ){
     }       
 }
 
-var a = new pokemon("Parasect", 30 , 60 , 10 , 0.30 )
-var b = new pokemon("Aéromite" , 20 , 70 , 10 , 0.90 )
+var a = new pokemon("Parasect", 30 , 60 , 10 , 30 )
+var b = new pokemon("Aéromite" , 20 , 70 , 10 , 90 )
 combat(a,b)
