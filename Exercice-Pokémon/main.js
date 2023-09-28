@@ -17,7 +17,7 @@ class pokemon{
 }
 
 function isLucky(ex,nb = 0){
-        nb = Math.floor(Math.random()*100)
+        nb = Math.random()
         if ( ex.luck >= nb){
             return true
         }
@@ -53,6 +53,6 @@ function combat( a , b ){
     }       
 }
 
-var a = new pokemon("Parasect", 30 , 60 , 10 , 30 )
-var b = new pokemon("Aéromite" , 20 , 70 , 10 , 90 )
+var a = new pokemon("Parasect", 30 , 60 , 10 , 0.30 )
+var b = new pokemon("Aéromite" , 20 , 70 , 10 , 0.90 )
 combat(a,b)
