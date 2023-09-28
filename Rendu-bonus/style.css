@@ -1,0 +1,58 @@
+h1{
+    font-size: 40px;
+    font-family: Helvetica;
+    text-align: center;
+    color:#31C4C4;
+    padding: 20px;
+    border: solid 3px #31C4C4
+}
+
+img{
+    display:inline-block;
+    position: center;
+    justify-content:center;
+}
+
+.ppc {
+    font-size: 27px;
+    font-family: Helvetica;
+    text-align: center;
+    background :#31C4C4;
+    color:white;
+    padding : 30px;
+    border: 30px;
+} 
+
+p{
+    font-size: 27px;
+    font-family: Helvetica;
+    text-align: center;
+    color:#31C4C4;
+    padding : 15px;
+    border: 30px;
+
+}
+
+input[type=button]{
+    background-color:white;
+    border: 3px solid #31C4C4;
+    color: #31C4C4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.choice-item{
+    position:relative;
+    font-family: Helvetica;
+    font-size:27px;
+    display: block;
+    color:#31C4C4
+}
+
+.choice-item div{
+    border:full 1px #31C4C4
+}
