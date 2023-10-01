@@ -24,22 +24,22 @@ function attack(person,sk){
     }
     else if (prob <= person.probDgt){
         sk.hpSk = sk.hpSk - 10
-        console.log( sk.nameSk + " a frapé mais a échoué ! " + person.name + ", le/la " + person.carac + " inflige 10 de dégats au tueur.")
+        console.log( sk.nameSk + " a frapé mais a échoué ! " + person.name + " " +person.carac + " inflige 10 de dégats au tueur.")
     }
     else if ( prob <= person.probDeathDgt){
         sk.hpSk = sk.hpSk - 15
         person.hp = 0
-        console.log(person.name + " est tombé.e... Mais dans sa chute, a infligé 15 de dégâts au " + sk.caracSk + " !")
+        console.log(person.name + " " +person.carac + " est tombé.e... Mais dans sa chute, a infligé 15 de dégâts au " + sk.caracSk + " !")
     }
-    console.log(sk.nameSk + " a encore " + sk.hpSk + " points de vie.")
+    console.log(sk.nameSk + " a " + sk.hpSk + " points de vie.")
 }
 
 let listName = ["Damien","Daniela", "Camille", "Ernest", "Eva", "Victor", "Enzo", "Bastien", "Paul", "Sofiane"]
-let listCarac = ["nerd", "sportif.ve", "blond.e", "brun.e", "geek", "combattant.e", "le/la bg/blg", "le/la policier.ère", "l'étudiant.e"]
-let listProbDeath = [0.2,0.3, 0.5]
-let listProbDgt = [0.2, 0.4, 0.6, 0.8]
-let listProbDeathDgt = [0.2, 0,5, 0.8]
-let listCharacters = [] 
+let listCarac = ["le/la nerd", "le/la sportif.ve", "le/la blond.e", "le/la brun.e", "la/la geek", "le/la combattant.e", "le/la bg/blg", "le/la policier.ère", "l'étudiant.e"]
+let listProbDeath = [0.1, 0.15, 0.2, 0.25]
+let listProbDgt = [0.6, 0.7, 0.8, 0.9]
+let listProbDeathDgt = [0.05, 0.1, 0.15, 0.2, 0.25]
+let listCharacters = []
 let listDeath = []
 let jason = new sk("Jason","Serial Killer", 100)
 
@@ -58,13 +58,12 @@ while(jason.hpSk > 0 ){
         }
     }
     if (listCharacters = []){
-        console.log("Jason a gagné.")
+        console.log("Il n'y a plus de survivants...")
         break
     }
 }
-if ( jason.hpSk === 0){
+if ( jason.hpSk <= 0){
 console.log("Bravo aux survivants, Jason a été tué ! RIP à : " + listDeath)
 }
-
 
 
