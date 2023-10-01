@@ -13,7 +13,6 @@ class pokemon{
         }
         ex.hp = ex.hp - dgt
     }
-
 }
 
 function isLucky(ex,nb = 0){

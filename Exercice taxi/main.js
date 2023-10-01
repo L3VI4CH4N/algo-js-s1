@@ -29,9 +29,6 @@ class character{
         }
     }
             
-        
-       
-
 let john = new character("John", 10, "Anissa - Wejdene")
 let radio = ["Bohemian Rhaphsody - Queen","Anissa - Wejdene", "Canard - Squeezie", "Idol - YOASOBI", "Numb - Linkin Park" ]
 console.log(john)
